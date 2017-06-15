@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------
-// Kash: the Kinda Aimless Shell.
+//  Kash: the Kinda Aimless Shell.
 // -------------------------------------------------------------------------
 
 #include <errno.h>
@@ -11,7 +11,7 @@
 #include <unistd.h>
 
 // -------------------------------------------------------------------------
-// Built in commands.
+//  Built in commands.
 // -------------------------------------------------------------------------
 
 // Exit the shell.
@@ -61,7 +61,7 @@ int kash_num_builtins() {
 }
 
 // -------------------------------------------------------------------------
-// Process/command launcher.
+//  Process/command launcher.
 // -------------------------------------------------------------------------
 
 void kash_exec(char **args) {
@@ -89,13 +89,14 @@ void kash_exec(char **args) {
 }
 
 // -------------------------------------------------------------------------
-// Parser.
+//  Input parser.
 // -------------------------------------------------------------------------
 
 // Tokenize a string, splitting on whitespace characters. Leading and
 // trailing whitespace is ignored. Consecutive whitespace characters are
 // treated as a single delimiter. The return value is a NULL terminated
-// array of string pointers which needs to be freed once we're done with it.
+// array of string pointers which needs to be freed once we're finished
+// with it.
 char** kash_split_line(char *line) {
     int length = 0;
     int capacity = 32;
@@ -130,7 +131,7 @@ char** kash_split_line(char *line) {
 }
 
 // Read a single line of input from stdin. The return value is a string
-// pointer which needs to be freed when we're finished with it.
+// pointer which needs to be freed once we're finished with it.
 char* kash_read_line() {
     char *line = NULL;
     size_t buflen = 0;
@@ -146,7 +147,7 @@ char* kash_read_line() {
 }
 
 // -------------------------------------------------------------------------
-// Entry point.
+//  Entry point.
 // -------------------------------------------------------------------------
 
 int main() {
