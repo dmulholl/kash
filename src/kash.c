@@ -160,7 +160,7 @@ int main() {
             kash_exec(args);
         }
 
-        free(line);
         free(args);
+        free(line);
     }
 }
