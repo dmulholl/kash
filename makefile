@@ -2,7 +2,7 @@
 # Make variables.
 # --------------------------------------------------------------------------
 
-CFLAGS = -Wall -Wextra -pedantic -Wno-unused-parameter --std=c99
+CFLAGS = -Wall -Wextra -Wno-unused-parameter --pedantic --std=c99
 
 # --------------------------------------------------------------------------
 # Targets.
