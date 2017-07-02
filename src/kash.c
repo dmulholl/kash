@@ -1,5 +1,8 @@
 // -------------------------------------------------------------------------
-//  Kash: a simple command line shell.
+// Kash: a simple command line shell.
+//
+// Author: Darren Mulholland <darren@mulholland.xyz>
+// License: Public Domain
 // -------------------------------------------------------------------------
 
 #include <errno.h>
@@ -11,7 +14,7 @@
 #include <unistd.h>
 
 // -------------------------------------------------------------------------
-//  Built in commands.
+// Built in commands.
 // -------------------------------------------------------------------------
 
 // Exit the shell.
@@ -61,7 +64,7 @@ int kash_num_builtins() {
 }
 
 // -------------------------------------------------------------------------
-//  Process/command launcher.
+// Process/command launcher.
 // -------------------------------------------------------------------------
 
 void kash_exec(char **args) {
@@ -89,7 +92,7 @@ void kash_exec(char **args) {
 }
 
 // -------------------------------------------------------------------------
-//  Input parser.
+// Input parser.
 // -------------------------------------------------------------------------
 
 // Tokenize a string, splitting on whitespace characters. Leading and
@@ -147,7 +150,7 @@ char* kash_read_line() {
 }
 
 // -------------------------------------------------------------------------
-//  Entry point.
+// Entry point.
 // -------------------------------------------------------------------------
 
 int main() {
