@@ -95,11 +95,10 @@ void kash_exec(char **args) {
 // Input parser.
 // -----------------------------------------------------------------------------
 
-// Tokenize a string, splitting on whitespace characters. Leading and
-// trailing whitespace is ignored. Consecutive whitespace characters are
-// treated as a single delimiter. The return value is a NULL terminated
-// array of string pointers which needs to be freed once we're finished
-// with it.
+// Tokenize a string, splitting on whitespace characters. Leading and trailing
+// whitespace is ignored. Consecutive whitespace characters are treated as a
+// single delimiter. The return value is a NULL terminated array of string
+// pointers which needs to be freed once we're finished with it.
 char** kash_split_line(char *line) {
     int length = 0;
     int capacity = 16;
@@ -133,8 +132,8 @@ char** kash_split_line(char *line) {
     return tokens;
 }
 
-// Read a single line of input from stdin. The return value is a string
-// pointer which needs to be freed once we're finished with it.
+// Read a single line of input from stdin. The return value is a string pointer
+// which needs to be freed once we're finished with it.
 char* kash_read_line() {
     char *line = NULL;
     size_t buflen = 0;
