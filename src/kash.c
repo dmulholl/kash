@@ -1,8 +1,5 @@
 // -----------------------------------------------------------------------------
 // Kash: a simple command line shell.
-//
-// Author: Darren Mulholland <darren@mulholland.xyz>
-// License: Public Domain
 // -----------------------------------------------------------------------------
 
 #include <errno.h>
