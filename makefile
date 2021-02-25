@@ -8,6 +8,6 @@ CFLAGS = -Wall -Wextra -Wno-unused-parameter --pedantic --std=c99
 # Targets.
 # ------------------------------------------------------------------------------
 
-kash: src/kash.c
+kash:
 	@mkdir -p bin
-	$(CC) $(CFLAGS) src/kash.c -o bin/kash
+	$(CC) $(CFLAGS) -o bin/kash src/kash.c
